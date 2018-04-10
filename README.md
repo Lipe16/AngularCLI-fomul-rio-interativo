@@ -13,7 +13,7 @@ vídeo exemplo no youtube: [Link vídeo](https://www.youtube.com/watch?v=XTmhs3A
 
 ![Ilustração](https://image.ibb.co/hHbq6c/angular02.png)
 
-![Ilustração](https://image.ibb.co/i85gex/angular03.png)
+![Ilustração](https://image.ibb.co/jFfdsH/angular03.png)
 
 ![Ilustração](https://image.ibb.co/k0FHmc/angular04.png)
 
