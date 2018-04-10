@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <h2>Reserva de Mesa</h2>
+    <p>
+        Reserva de Mesa
+        Esta função consiste em dar uma opção para o cliente reservar antecipadamente uma mesa no restaurante, assim selecionando de forma prática a quantidade de pessoas, lugares e horários.  
+    </p>
+    
+  
+  
+  
+  <!-- Sim e não-->
+  
+        <div class="col-md-12 text-center" >
+  
+            <label class="radio">
+              <input [(ngModel)]="service.reservaMesas" value="sim"  (click)='service.addReservaMesas("sim")' type="radio"name="reserva">
+              <div class="emot happy">
+                <div class="mouth smile "></div>
+              </div>
+            </label>
+          
+            <label class="radio">
+              <input [(ngModel)]="service.reservaMesas" value="não" (click)='service.addReservaMesas("não")'   type="radio" name="reserva">
+              <div class="emot happy ">
+                <div class="mouth sad"></div>
+              </div>
+            </label>
+  
+  
+  <!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+  
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+  -->     
+        </div>
+   
+  
+    
+  
+  <br/>
+  
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/redes-sociais" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/seu-restaurante" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+  
+  
+  </div>

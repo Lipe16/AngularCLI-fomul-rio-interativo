@@ -1,0 +1,41 @@
+<div class="col-md-12">
+    <h2>E-mail</h2>
+    <p>Qual é o seu endereço de e-mail?*</p>
+  
+  
+  <!-- Sim e não-->
+  
+        <div class="col-md-12 text-center" >
+                <p-messages [(value)]="msgs"></p-messages>
+  
+
+          
+          <span class="ui-float-label">
+              <input placeholder="Seu e-mail" [(ngModel)]="service.email" value="service.email"  (keyup)='service.addEmail(service.email)' id="email" type="text" pInputText/> 
+             
+          </span>
+  
+  
+  <!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+  
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+  -->     
+        </div>
+   
+  
+    
+  
+  <br/>
+  
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/seu-nome" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a (click)="liberar()" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+  
+  
+  </div>

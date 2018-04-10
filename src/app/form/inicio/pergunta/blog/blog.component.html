@@ -1,0 +1,51 @@
+<div class="col-md-12">
+    <h2>Blog</h2>
+    <p>Aqui você pode compartilhar facilmente qualquer conteúdo como dicas de treino, avisos, novidades, etc.</p>
+    
+
+
+
+  <!-- Sim e não-->
+
+    <label class="radio ">
+        <input [(ngModel)]="service.blog" value="sim"  (click)='service.addBlog("sim")' type="radio"name="blog">
+        <div class="emot happy ">
+          <div class="mouth smile "></div>
+        </div>
+    </label>
+
+
+    <label class="radio">
+        <input [(ngModel)]="service.blog" value="não" (click)='service.addBlog("não")'   type="radio" name="blog">
+        <div class="emot happy ">
+          <div class="mouth sad"></div>
+        </div>
+    </label>
+
+
+<!--
+
+        <div class="col-md-12 text-center" >
+
+            <a [ngClass]="{'active': service.blog == 'sim'}"  (click)='service.addBlog("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.blog != 'sim' }" (click)='service.addBlog("não")' class="btn btn-lg btn-outline-primary">Não</a>
+      
+        </div>
+
+    -->
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/instrucao" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/contato" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

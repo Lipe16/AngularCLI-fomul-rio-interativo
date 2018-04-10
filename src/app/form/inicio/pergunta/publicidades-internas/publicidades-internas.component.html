@@ -1,0 +1,53 @@
+<div class="col-md-12">
+  <h2>Publicidades Internas</h2>
+  <p>
+    
+    Utilizando essa função você poderá fechar parcerias com comércios locais oferecendo banners de dois tamanhos diferentes dentro de seu App, para divulgar esse comércio, assim gerando renda para a Paróquia através do Aplicativo.
+  
+  </p>
+  
+
+
+
+<!-- Sim e não-->
+
+      <div class="col-md-12 text-center" >
+
+          <label class="radio">
+            <input [(ngModel)]="service.publicidadesInternas" value="sim"  (click)='service.addPublicidadesInternas("sim")' type="radio"name="publicidade">
+            <div class="emot happy">
+              <div class="mouth smile "></div>
+            </div>
+          </label>
+        
+          <label class="radio">
+            <input [(ngModel)]="service.publicidadesInternas" value="não" (click)='service.addPublicidadesInternas("não")'   type="radio" name="publicidade">
+            <div class="emot happy ">
+              <div class="mouth sad"></div>
+            </div>
+          </label>
+
+
+<!--
+          <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+          <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+      </div>
+ 
+
+  
+
+<br/>
+
+<div class="row">
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/publicidade-google" class="btn btn-primary btn-lg btn-block">Anterior </a>
+  </div>
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/santo-do-dia" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+  </div>
+</div>
+
+
+</div>

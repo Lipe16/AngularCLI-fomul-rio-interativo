@@ -1,0 +1,52 @@
+<div class="col-md-12">
+  <h2>Dízimo Digital</h2>
+  <p>
+    
+    Com o Dízimo Digital você pode oferecer uma maneira alternativa para o membro de sua comunidade doar o dízimo, com muita facilidade podendo doar através de todos os cartões de crédito, assim ajudando aqueles que às vezes esquecem, pois a cobrança é automática!
+  </p>
+  
+
+
+
+<!-- Sim e não-->
+
+      <div class="col-md-12 text-center" >
+
+          <label class="radio">
+            <input [(ngModel)]="service.dizimoDigital" value="sim"  (click)='service.addDizimoDigital("sim")' type="radio"name="evangelica">
+            <div class="emot happy">
+              <div class="mouth smile "></div>
+            </div>
+          </label>
+        
+          <label class="radio">
+            <input [(ngModel)]="service.dizimoDigital" value="não" (click)='service.addDizimoDigital("não")'   type="radio" name="evangelica">
+            <div class="emot happy ">
+              <div class="mouth sad"></div>
+            </div>
+          </label>
+
+
+<!--
+          <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+          <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+      </div>
+ 
+
+  
+
+<br/>
+
+<div class="row">
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/{{anterior}}" class="btn btn-primary btn-lg btn-block">Anterior </a>
+  </div>
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/{{proximo}}" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+  </div>
+</div>
+
+
+</div>

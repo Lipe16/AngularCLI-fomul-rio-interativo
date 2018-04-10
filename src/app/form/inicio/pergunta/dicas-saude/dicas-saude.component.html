@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <h2>Dicas de Saúde ou Dieta</h2>
+    <p>
+        Seu aplicativo terá uma aba onde as pessoas lerão dicas de saúde ou dietas providas por você ou funcionários ou por um site especializado.    
+    </p>
+    
+
+
+
+  <!-- Sim e não-->
+    <!-- Sim e não-->
+    <label class="radio ">
+            <input [(ngModel)]="service.dicasSaude" value="sim"  (click)='service.addDicasSaude("sim")' type="radio"name="saude">
+            <div class="emot happy ">
+              <div class="mouth smile "></div>
+            </div>
+        </label>
+        
+        <label class="radio">
+            <input [(ngModel)]="service.dicasSaude" value="não" (click)='service.addDicasSaude("não")'   type="radio" name="saude">
+            <div class="emot happy ">
+              <div class="mouth sad"></div>
+            </div>
+        </label>
+    
+    
+    <!--
+
+        <div class="col-md-12 text-center" >
+
+            <a [ngClass]="{'active': service.dicasSaude == 'sim'}"  (click)='service.addDicasSaude("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasSaude != 'sim' }" (click)='service.addDicasSaude("não")' class="btn btn-lg btn-outline-primary">Não</a>
+      
+        </div>
+
+    -->
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/contato" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/dicas-treino" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

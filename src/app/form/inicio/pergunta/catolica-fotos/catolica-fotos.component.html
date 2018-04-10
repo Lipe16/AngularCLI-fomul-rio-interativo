@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <h2>Fotos</h2>
+    <p>    
+        Aqui seus usuários verão todas as fotos que você deseja compartilhar. A forma de adicionar essas fotos será muito simples, diretamente do seu smartphone.
+    </p>
+    
+  
+  
+  
+  <!-- Sim e não-->
+  
+  <label class="radio">
+        <input [(ngModel)]="service.catolicaFotos" value="sim"  (click)='service.addCatolicaFotos("sim")' type="radio" name="fotos">
+        <div class="emot happy ">
+          <div class="mouth smile "></div>
+        </div>
+      </label>
+    
+    <label class="radio">
+        <input [(ngModel)]="service.catolicaFotos" value="não" (click)='service.addCatolicaFotos("não")'   type="radio" name="fotos">
+        <div class="emot happy ">
+          <div class="mouth sad"></div>
+        </div>
+    </label>
+  
+  
+  <!--
+  
+        <div class="col-md-12 text-center" >
+  
+            <a [ngClass]="{'active': service.contato == 'sim'}"  (click)='service.addContato("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+  
+            <a [ngClass]="{'active': service.contato != 'sim' }" (click)='service.addContato("não")' class="btn btn-lg btn-outline-primary">Não</a>
+      
+        </div>
+  -->
+  
+    
+  
+  <br/>
+  
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/formularios" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/sua-igreja" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+  
+  
+  </div>

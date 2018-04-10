@@ -1,0 +1,51 @@
+<div class="col-md-12">
+    <h2>Horário de Treinos</h2>
+    <p>
+        No "Horário de Treinos" todos os seus clientes verão o cronograma completo da sua academia.
+    </p>
+    
+
+
+
+  <!-- Sim e não-->
+
+        <div class="col-md-12 text-center" >
+
+            <label class="radio">
+              <input [(ngModel)]="service.dicasTreino" value="sim"  (click)='service.addDicasTreino("sim")' type="radio"name="treino">
+              <div class="emot happy">
+                <div class="mouth smile "></div>
+              </div>
+            </label>
+          
+            <label class="radio">
+              <input [(ngModel)]="service.dicasTreino" value="não" (click)='service.addDicasTreino("não")'   type="radio" name="treino">
+              <div class="emot happy ">
+                <div class="mouth sad"></div>
+              </div>
+            </label>
+
+
+<!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+        </div>
+   
+
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/dicas-saude" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/fotos" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

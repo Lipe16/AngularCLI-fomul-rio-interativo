@@ -1,0 +1,52 @@
+<div class="col-md-12">
+  <h2>Formulários</h2>
+  <p>
+      
+      Através da aba formulários, você poderá facilitar o preenchimento de formulários que são comumente utilizados na secretaria paroquial, como por exemplo: pedido de oração, formulário do dízimo, inscrição para catequese, etc.
+  </p>
+
+
+
+
+<!-- Sim e não-->
+  <label class="radio ">
+      <input [(ngModel)]="service.formularios" value="sim"  (click)='service.addFormularios("sim")' type="radio"name="formularios">
+      <div class="emot happy ">
+        <div class="mouth smile "></div>
+      </div>
+  </label>
+  
+  <label class="radio">
+      <input [(ngModel)]="service.formularios" value="não" (click)='service.addFormularios("não")'   type="radio" name="formularios">
+      <div class="emot happy ">
+        <div class="mouth sad"></div>
+      </div>
+  </label>
+
+
+<!--
+
+      <div class="col-md-12 text-center" >
+
+          <a [ngClass]="{'active': service.blog == 'sim'}"  (click)='service.addBlog("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+          <a [ngClass]="{'active': service.blog != 'sim' }" (click)='service.addBlog("não")' class="btn btn-lg btn-outline-primary">Não</a>
+    
+      </div>
+
+  -->
+  
+
+<br/>
+
+<div class="row">
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/catolica-agenda" class="btn btn-primary btn-lg btn-block">Anterior </a>
+  </div>
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/catolica-fotos" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+  </div>
+</div>
+
+
+</div>

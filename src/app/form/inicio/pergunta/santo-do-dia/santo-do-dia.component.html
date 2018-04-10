@@ -1,0 +1,52 @@
+<div class="col-md-12">
+  <h2>Santo do Dia</h2>
+  <p>
+    
+    Na aba Santo do Dia será disponibilizado ao longo do ano a história de um santo da Igreja, podendo assim se ter um pouco mais de conhecimento sobre a Igreja para o paroquiando.
+  </p>
+  
+
+
+
+<!-- Sim e não-->
+
+      <div class="col-md-12 text-center" >
+
+          <label class="radio">
+            <input [(ngModel)]="service.santoDoDia" value="sim"  (click)='service.addSantoDoDia("sim")' type="radio"name="santo">
+            <div class="emot happy">
+              <div class="mouth smile "></div>
+            </div>
+          </label>
+        
+          <label class="radio">
+            <input [(ngModel)]="service.santoDoDia" value="não" (click)='service.addSantoDoDia("não")'   type="radio" name="santo">
+            <div class="emot happy ">
+              <div class="mouth sad"></div>
+            </div>
+          </label>
+
+
+<!--
+          <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+          <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+      </div>
+ 
+
+  
+
+<br/>
+
+<div class="row">
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/publicidades-internas" class="btn btn-primary btn-lg btn-block">Anterior </a>
+  </div>
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/dizimo-digital" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+  </div>
+</div>
+
+
+</div>

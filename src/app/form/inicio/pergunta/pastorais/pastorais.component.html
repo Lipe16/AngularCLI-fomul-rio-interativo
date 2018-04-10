@@ -1,0 +1,52 @@
+<div class="col-md-12">
+  <h2>Pastorais</h2>
+  <p>
+    
+    Divulgação de Pastorais.
+  </p>
+  
+
+
+
+<!-- Sim e não-->
+
+      <div class="col-md-12 text-center" >
+
+          <label class="radio">
+            <input [(ngModel)]="service.pastorais" value="sim"  (click)='service.addPastorais("sim")' type="radio"name="pastorais">
+            <div class="emot happy">
+              <div class="mouth smile "></div>
+            </div>
+          </label>
+        
+          <label class="radio">
+            <input [(ngModel)]="service.pastorais" value="não" (click)='service.addPastorais("não")'   type="radio" name="pastorais">
+            <div class="emot happy ">
+              <div class="mouth sad"></div>
+            </div>
+          </label>
+
+
+<!--
+          <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+          <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+      </div>
+ 
+
+  
+
+<br/>
+
+<div class="row">
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/noticias-catolicas" class="btn btn-primary btn-lg btn-block">Anterior </a>
+  </div>
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/publicidade-google" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+  </div>
+</div>
+
+
+</div>

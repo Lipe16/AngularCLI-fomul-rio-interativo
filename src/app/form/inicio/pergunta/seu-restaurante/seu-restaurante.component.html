@@ -1,0 +1,37 @@
+<div class="col-md-12">
+    <h2>Nos conte um pouco sobre seu restaurante</h2>
+
+    
+
+
+
+  <!-- Sim e não-->
+
+        <div class="col-md-12 text-center" >
+
+            <p-editor  [style]="{'background-color':'#fff', 'height':'100px'}" [(ngModel)]="service.seuRestaurante" value="service.seuRestaurante"  (keyup)='service.addSeuRestaurante(service.seuRestaurante)'></p-editor>
+
+
+<!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+        </div>
+   
+
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/reserva-mesas" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/seu-nome" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

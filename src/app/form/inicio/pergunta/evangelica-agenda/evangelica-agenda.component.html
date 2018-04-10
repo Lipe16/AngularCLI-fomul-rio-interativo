@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <h2>Agenda</h2>
+    <p>
+        
+        Com a agenda, a comunidade não perderá mais nenhum evento, todo o cronograma da Igreja ficará lá disponível para todos. Podendo enviar notificações para as pessoas antes dos eventos.
+    </p>
+    
+
+
+
+  <!-- Sim e não-->
+
+        <div class="col-md-12 text-center" >
+
+            <label class="radio">
+              <input [(ngModel)]="service.evangelicaAgenda" value="sim"  (click)='service.addEvangelicaAgenda("sim")' type="radio"name="agenda">
+              <div class="emot happy">
+                <div class="mouth smile "></div>
+              </div>
+            </label>
+          
+            <label class="radio">
+              <input [(ngModel)]="service.evangelicaAgenda" value="não" (click)='service.addEvangelicaAgenda("não")'   type="radio" name="agenda">
+              <div class="emot happy ">
+                <div class="mouth sad"></div>
+              </div>
+            </label>
+
+
+<!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+        </div>
+   
+
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/evangelica-biblia-online" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/musicas-gospel" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

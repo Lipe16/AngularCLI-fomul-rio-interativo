@@ -1,0 +1,164 @@
+
+<div class="col-md-12">
+  <div class="" id="linha1">
+    <!-- MODALIDADES -->
+    
+
+    <h5>reveja suas informações antes de enviar:</h5>
+    <ul style="text-align: left;">
+        <li *ngIf="service.modalidade != null">Modalidade: {{service.modalidade}}<a routerLink="/pergunta/modalidades"> editar</a></li>
+        <li *ngIf="service.blog != null">Blog: {{service.blog}}<a routerLink="/pergunta/blog"> editar</a></li>
+        <li *ngIf="service.contato != null">informações de contato: {{service.contato}}<a routerLink="/pergunta/contato"> editar</a></li>
+        <li *ngIf="service.dicasSaude != null">Dicas de saúde: {{service.dicasSaude}}<a routerLink="/pergunta/dicas-saude"> editar</a></li>
+        <li *ngIf="service.dicasTreino!= null">Dicas de treino: {{service.dicasTreino}}<a routerLink="/pergunta/dicas-treino"> editar</a></li>
+        <li *ngIf="service.fotos != null">Compartilhamento de fotos: {{service.fotos}}<a routerLink="/pergunta/fotos"> editar</a></li>
+        
+        
+        <li *ngIf="service.empresa != null">Sobre sua empresa: 
+                <p-editor readonly="true"  [style]="{'background-color':'#fff', 'height':'100px'}" [(ngModel)]="service.empresa" value="service.empresa" ></p-editor>  
+            <a routerLink="/pergunta/sua-empresa"> editar</a>
+        </li>
+        
+        
+        <li *ngIf="service.areaEstudo != null">Disponibilizar área de estudo: {{service.areaEstudo}}<a routerLink="/pergunta/area-estudo"> editar</a></li>
+        <li *ngIf="service.cardapioNutricional != null">Cardapio nutricional: {{service.cardapioNutricional}}<a routerLink="/pergunta/cardapio-nutricional"> editar</a></li>
+        <li *ngIf="service.eventos!= null">compartilhar eventos: {{service.eventos}}<a routerLink="/pergunta/eventos"> editar</a></li>
+        <li *ngIf="service.mensagens != null">Mensagens: {{service.mensagens}}<a routerLink="/pergunta/mensagens"> editar</a></li>
+        <li *ngIf="service.muralFotos != null">Acesso a mural de fotos: {{service.muralFotos}}<a routerLink="/pergunta/mural-fotos"> editar</a></li>
+        <li *ngIf="service.noticias != null">Acesso a noticias: {{service.noticias}}<a routerLink="/pergunta/noticias"> editar</a></li>
+        
+        
+        <li *ngIf="service.ideia != null">Sua ideia:
+             <p-editor readonly="true"  [style]="{'background-color':'#fff', 'height':'100px'}" [(ngModel)]="service.ideia" value="service.ideia" ></p-editor>  
+             <a routerLink="/pergunta/sua-ideia"> editar</a>
+        </li>
+        
+        
+        <li *ngIf="service.igrejaInstrucao != null">Igreja: {{service.igrejaInstrucao}}<a routerLink="/pergunta/igreja-instrucao"> editar</a></li>
+        <li *ngIf="service.evangelicaFotos != null">Fotos: {{service.evangelicaFotos}}<a routerLink="/pergunta/evangelica-fotos"> editar</a></li>
+        <li *ngIf="service.evangelicaBibliaOnline !=null">Biblia online: {{service.evangelicaBibliaOnline}}<a routerLink="/pergunta/evangelica-biblia-online"> editar</a></li>
+        <li *ngIf="service.evangelicaAgenda != null">Agenda: {{service.evangelicaAgendae}}<a routerLink="/pergunta/evangelica-agenda"> editar</a></li>
+        <li *ngIf="service.musicasGospel != null">Músicas gospel: {{service.musicasGospel}}<a routerLink="/pergunta/musicas-gospel"> editar</a></li>
+        <li *ngIf="service.evangelicaNoticias != null">Noticias: {{service.evangelicaNoticias}}<a routerLink="/pergunta/evangelica-noticias"> editar</a></li>
+        <li *ngIf="service.publicidadeGoogle != null">Publicidade do Google: {{service.publicidadeGoogle}}<a routerLink="/pergunta/publicidade-google"> editar</a></li>
+        <li *ngIf="service.evangelicaTestemunhos != null">Testemunhos: {{service.evangelicaTestemunhos}}<a routerLink="/pergunta/evangelica-testemunhos"> editar</a></li>
+        <li *ngIf="service.dizimoDigital != null">Dizimo digital: {{service.dizimoDigital}}<a routerLink="/pergunta/dizimo-digital"> editar</a></li>
+        
+        
+        
+        <li *ngIf="service.suaIgreja != null">Sua igreja: 
+
+            <p-editor readonly="true"  [style]="{'background-color':'#fff', 'height':'100px'}" [(ngModel)]="service.suaIgreja" value="service.suaIgreja" ></p-editor>               
+            <a routerLink="/pergunta/sua-igreja"> editar</a>
+        </li>
+        
+        
+        
+        
+        <li *ngIf="service.musicasCatolicas != null">músicas católicas: {{service.musicasCatolicas}}<a routerLink="/pergunta/musicas-catolicas"> editar</a></li>
+        <li *ngIf="service.noticiasCatolicas != null">Noticias: {{service.noticiasCatolicas}}<a routerLink="/pergunta/noticias-catolicas"> editar</a></li>
+        <li *ngIf="service.pastorais !=null">Pastorais: {{service.pastorais}}<a routerLink="/pergunta/pastorais"> editar</a></li>
+        <li *ngIf="service.publicidadesInternas!= null">Publicidades internas: {{service.publicidadesInternas}}<a routerLink="/pergunta/publicidades-internas"> editar</a></li>
+        <li *ngIf="service.santoDoDia !=null">Compartilhar Santo do dia: {{service.santoDoDia}}<a routerLink="/pergunta/santo-do-dia"> editar</a></li>   
+        <li *ngIf="service.liturgiaDiaria!= null">Liturgia diária: {{service.liturgiaDiaria}}<a routerLink="/pergunta/liturgia-diaria"> editar</a></li> 
+        <li *ngIf="service.catolicaAgenda!=null">Catolica agenda: {{service.catolicaAgenda}}<a routerLink="/pergunta/catolica-agenda"> editar</a></li> 
+        <li *ngIf="service.formularios!= null">formulários: {{service.formularios}}<a routerLink="/pergunta/formularios"> editar</a></li>  
+        <li *ngIf="service.catolicaFotos!= null">Compartilhar fotos: {{service.catolicaFotos}}<a routerLink="/pergunta/catolica-fotos"> editar</a></li>  
+        
+        <li *ngIf="service.outroSuaIdeia != null">Sua ideia:
+                <p-editor readonly="true"  [style]="{'background-color':'#fff', 'height':'100px'}" [(ngModel)]="service.outroSuaIdeia" value="service.outroSuaIdeia" ></p-editor>         
+                  <a routerLink="/pergunta/outro-sua-ideia"> editar
+                 </a>
+        </li>  
+
+        <li *ngIf="service.restauranteBlog != null">Restaurante blog: {{service.restauranteBlog}}<a routerLink="/pergunta/restaurante-blog"> editar</a></li>  
+        <li *ngIf="service.cardapio !=null">Compartilhar cardápio : {{service.cardapio}}<a routerLink="/pergunta/cardapio"> editar</a></li>  
+        <li *ngIf="service.cartaoFidelidade != null">Cartão fidelidade: {{service.cartaoFidelidade}}<a routerLink="/pergunta/cartao-fidelidade"> editar</a></li>
+        <li *ngIf="service.restauranteContato != null">Informações de contato: {{service.restauranteContato}}<a routerLink="/pergunta/restaurante-contato"> editar</a></li>
+        <li *ngIf="service.restauranteFotos != null">Compartilhar Fotos: {{service.restauranteFotos}}<a routerLink="/pergunta/restaurante-fotos"> editar</a></li>    
+        <li *ngIf="service.geofence != null">Geofence: {{service.geofence}}<a routerLink="/pergunta/geofence"> editar</a></li> 
+        <li *ngIf="service.redesSociais != null">Redes sociais: {{service.redesSociais}}<a routerLink="/pergunta/redes-sociais"> editar</a></li> 
+        <li *ngIf="service.reservaMesas != null">Reserva de mesas: {{service.reservaMesas}}<a routerLink="/pergunta/reserva-mesas"> editar</a></li> 
+        <li *ngIf="service.seuRestaurante != null">Sobre seu restaurante: {{service.seuRestaurante}}<a routerLink="/pergunta/seu-restaurante"> editar</a></li> 
+        <li *ngIf="service.informacoesEContatos != null">Informações e contato: {{service.informacoesEContatos}}<a routerLink="/pergunta/informacoes-e-contato"> editar</a></li> 
+        <li *ngIf="service.servicosBlog != null">recursos de blog: {{service.servicosBlog}}<a routerLink="/pergunta/servicos-blog"> editar</a></li> 
+        <li *ngIf="service.servicosCartaoFidelidade != null">Cartão fidelidade: {{service.servicosCartaoFidelidade}}<a routerLink="/pergunta/servicos-cartao-fidelidade"> editar</a></li>  
+        <li *ngIf="service.dashBoard != null">DashBoard fácil: {{service.dashBoard}}<a routerLink="/pergunta/dash-board"> editar</a></li> 
+        <li *ngIf="service.nome != null">Seu nome: {{service.nome}}<a routerLink="/pergunta/seu-nome"> editar</a></li> 
+        <li *ngIf="service.email != null">Seu e-mail: {{service.email}}<a routerLink="/pergunta/seu-email"> editar</a></li>
+        <li *ngIf="service.telefone != null">seu Telefone: {{service.telefone}}<a routerLink="/pergunta/seu-telefone"> editar</a></li>  
+
+    </ul>
+  </div>
+
+  <div class="row">
+      <div class="col-md-6 col-sm-6 espaco">
+          <a routerLink="/pergunta/seu-telefone" class="btn btn-primary btn-lg btn-block">Anterior </a>
+      </div>
+      <div class="col-md-6 col-sm-6 espaco">
+          <a routerLink="/pergunta/confirmacao" class="btn btn-primary btn-lg btn-block btn-outline-primary">Enviar</a>
+      </div>
+  </div>
+</div>
+
+
+<!--
+    <ul style="text-align: left;">
+
+   
+
+        <li *ngIf="service.modalidade != null">Modalidade: {{service.modalidade}}<a routerLink="/pergunta/modalidades"> editar</a></li>
+        <li *ngIf="service.blog != null">Blog: {{service.blog}}<a routerLink="/pergunta/blog"> editar</a></li>
+        <li *ngIf="service.contato != null">informações de contato: {{service.contato}}<a routerLink="/pergunta/contato"> editar</a></li>
+        <li *ngIf="service.dicasSaude != null">Dicas de saúde: {{service.dicasSaude}}<a routerLink="/pergunta/dicas-saude"> editar</a></li>
+        <li *ngIf="service.dicasTreino != null">Dicas de treino: {{service.dicasTreino}}<a routerLink="/pergunta/dicas-treino"> editar</a></li>
+        <li *ngIf="service.fotos != null">Compartilhamento de fotos: {{service.fotos}}<a routerLink="/pergunta/fotos"> editar</a></li>
+        <li *ngIf="service.empresa != null">Sobre sua empresa: {{service.empresa}}<a routerLink="/pergunta/empresa"> editar</a></li>
+        <li *ngIf="service.areaEstudos != null">Acesso a área de estudo: {{service.areaEstudo}}<a routerLink="/pergunta/area-estudo"> editar</a></li>
+        <li *ngIf="service.cardapioNutricional != null">Cardapio nutricional: {{service.cardapioNutricional}}<a routerLink="/pergunta/cardapio-nutricional"> editar</a></li>
+        <li *ngIf="service.eventos!= null">compartilhar eventos: {{service.eventos}}<a routerLink="/pergunta/eventos"> editar</a></li>
+        <li *ngIf="service.mensagens != null">Mensagens: {{service.mensagens}}<a routerLink="/pergunta/mensagens"> editar</a></li>
+        <li *ngIf="service.muralFotos != null">Acesso a mural de fotos: {{service.muralFotos}}<a routerLink="/pergunta/mural-fotos"> editar</a></li>
+        <li *ngIf="service.noticias != null">Acesso a noticias: {{service.noticias}}<a routerLink="/pergunta/noticias"> editar</a></li>
+        <li *ngIf="service.ideia != null">Sua ideia: {{service.ideia}}<a routerLink="/pergunta/sua-ideia"> editar</a></li>
+        <li *ngIf="service.igrejaInstrucao != null">Igreja: {{service.igrejaInstrucao}}<a routerLink="/pergunta/igreja-instrucao"> editar</a></li>
+        <li *ngIf="service.evangelicaFotos != null">Fotos: {{service.evangelicaFotos}}<a routerLink="/pergunta/evangelica-fotos"> editar</a></li>
+        <li *ngIf="service.evangelicaBibliaOnline != null">Biblia online: {{service.evangelicaBibliaOnline}}<a routerLink="/pergunta/evangelica-biblia-online"> editar</a></li>
+        <li *ngIf="service.evangelicaAgenda != null">Agenda: {{service.evangelicaAgendae}}<a routerLink="/pergunta/evangelica-agenda"> editar</a></li>
+        <li *ngIf="service.musicasGospel != null">Músicas gospel: {{service.musicasGospel}}<a routerLink="/pergunta/musicas-gospel"> editar</a></li>
+        <li *ngIf="service.evangelicaNoticias != null">Noticias: {{service.evangelicaNoticias}}<a routerLink="/pergunta/evangelica-noticias"> editar</a></li>
+        <li *ngIf="service.publicidadeGoogle != null">Publicidade do Google: {{service.publicidadeGoogle}}<a routerLink="/pergunta/publicidade-google"> editar</a></li>
+        <li *ngIf="service.evangelicaTestemunhos != null">Testemunhos: {{service.evangelicaTestemunhos}}<a routerLink="/pergunta/evangelica-testemunhos"> editar</a></li>
+        <li *ngIf="service.dizimoDigital != null">Dizimo digital: {{service.dizimoDigital}}<a routerLink="/pergunta/dizimo-digital"> editar</a></li>
+        <li *ngIf="service.suaIgreja != null">Sua igreja: {{service.suaIgreja}}<a routerLink="/pergunta/sua-igreja"> editar</a></li>
+        <li *ngIf="service.musicasCatolicas != null">músicas católicas: {{service.musicasCatolicas}}<a routerLink="/pergunta/musicas-catolicas"> editar</a></li>
+        <li *ngIf="service.noticiasCatolicas != null">Noticias: {{service.noticiasCatolicas}}<a routerLink="/pergunta/noticias-catolicas"> editar</a></li>
+        <li *ngIf="service.pastorais != null">Pastorais: {{service.pastorais}}<a routerLink="/pergunta/pastorais"> editar</a></li>
+        <li *ngIf="service.publicidadesInternas != null">Publicidades internas: {{service.publicidadesInternas}}<a routerLink="/pergunta/publicidades-internas"> editar</a></li>
+        <li *ngIf="service.santoDoDia != null">Compartilhar Santo do dia: {{service.santoDoDia}}<a routerLink="/pergunta/santo-do-dia"> editar</a></li>   
+        <li *ngIf="service.liturgiaDiaria!= null">Liturgia diária: {{service.liturgiaDiaria}}<a routerLink="/pergunta/liturgia-diaria"> editar</a></li> 
+        <li *ngIf="service.catolicaAgenda!= null">Catolica agenda: {{service.catolicaAgenda}}<a routerLink="/pergunta/catolica-agenda"> editar</a></li> 
+        <li *ngIf="service.formularios!= null">formulários: {{service.formularios}}<a routerLink="/pergunta/formularios"> editar</a></li>  
+        <li *ngIf="service.catolicaFotos!= null">Compartilhar fotos: {{service.catolicaFotos}}<a routerLink="/pergunta/catolica-fotos"> editar</a></li>  
+        <li *ngIf="service.outroSuaIdeia != null">Sua ideia: {{service.outroSuaIdeia}}<a routerLink="/pergunta/outro-sua-ideia"> editar</a></li>  
+        <li *ngIf="service.restauranteBlog != null">Restaurante blog: {{service.restauranteBlog}}<a routerLink="/pergunta/restaurante-blog"> editar</a></li>  
+        <li *ngIf="service.cardapio != null">Compartilhar cardápio : {{service.cardapio}}<a routerLink="/pergunta/cardapio"> editar</a></li>  
+        <li *ngIf="service.cartaoFidelidade != null">Cartão fidelidade: {{service.cartaoFidelidade}}<a routerLink="/pergunta/cartao-fidelidade"> editar</a></li>
+        <li *ngIf="service.restauranteContato != null">Informações de contato: {{service.restauranteContato}}<a routerLink="/pergunta/restaurante-contato"> editar</a></li>
+        <li *ngIf="service.restauranteFotos != null">Compartilhar Fotos: {{service.restauranteFotos}}<a routerLink="/pergunta/restaurante-fotos"> editar</a></li>    
+        <li *ngIf="service.geofence != null">Geofence: {{service.geofence}}<a routerLink="/pergunta/geofence"> editar</a></li> 
+        <li *ngIf="service.redesSociais != null">Redes sociais: {{service.redesSociais}}<a routerLink="/pergunta/redes-sociais"> editar</a></li> 
+        <li *ngIf="service.reservaMesas != null">Reserva de mesas: {{service.reservaMesas}}<a routerLink="/pergunta/reserva-mesas"> editar</a></li> 
+        <li *ngIf="service.seuRestaurante != null">Sobre seu restaurante: {{service.seuRestaurante}}<a routerLink="/pergunta/seu-restaurante"> editar</a></li> 
+        <li *ngIf="service.informacoesEContatos != null">Informações e contato: {{service.informacoesEContatos}}<a routerLink="/pergunta/informacoes-e-contato"> editar</a></li> 
+        <li *ngIf="service.servicosBlog != null">recursos de blog: {{service.servicosBlog}}<a routerLink="/pergunta/servicos-blog"> editar</a></li> 
+        <li *ngIf="service.servicosCartaoFidelidade != null">Cartão fidelidade: {{service.servicosCartaoFidelidade}}<a routerLink="/pergunta/servicos-cartao-fidelidade"> editar</a></li>  
+        <li *ngIf="service.dashBoard != null">DashBoard fácil: {{service.dashBoard}}<a routerLink="/pergunta/dashBoard"> editar</a></li> 
+        <li *ngIf="service.nome != null">Seu nome: {{service.nome}}<a routerLink="/pergunta/nome"> editar</a></li> 
+        <li *ngIf="service.email != null">Seu e-mail: {{service.email}}<a routerLink="/pergunta/email"> editar</a></li>
+        <li *ngIf="service.telefone != null">seu Telefone: {{service.telefone}}<a routerLink="/pergunta/telefone"> editar</a></li>  
+
+    </ul>
+
+
+-->

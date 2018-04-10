@@ -1,0 +1,50 @@
+<div class="col-md-12">
+  <div class="row" id="linha1">
+    <!-- MODALIDADES -->
+
+      <label class="col-md-3 col-sm-3">
+        <input [(ngModel)]="service.modalidade" value="academia"  (change)='service.addModalidade("academia")'  type="radio" name="modalidade">
+        <br/><img src="assets/img/academia.png" width="80px"/><br />
+        <label>Academia</label>
+      </label>
+
+      <label class="col-md-3 col-sm-3">
+          <input [(ngModel)]="service.modalidade" value="escola"   (change)='service.addModalidade("escola")' type="radio" name="modalidade">
+          <br/><img src="assets/img/escola.png" width="80px"/><br />
+          <label>Academico</label>
+      </label>
+
+      <label for="igreja" class="col-md-3 col-sm-3">
+          <input id="igreja" [(ngModel)]="service.modalidade" value="igreja"   (change)='service.addModalidade("igreja")' type="radio" name="modalidade">
+          <br/><img src="assets/img/igreja.png" width="80px"/><br />
+          <label >Igreja/<wbr/>Comunidade</label>
+      </label>
+
+      <label class="col-md-3 col-sm-3">
+          <input [(ngModel)]="service.modalidade" value="restaurante"   (change)='service.addModalidade("restaurante")' type="radio" name="modalidade">
+          <br/><img src="assets/img/restaurante.png" width="80px"/><br />
+          <label>Restaurante</label>
+      </label>
+
+      <label class="col-md-3 col-sm-3">
+          <input [(ngModel)]="service.modalidade" value="servicos"   (change)='service.addModalidade("servicos")' type="radio" name="modalidade">
+          <br/><img src="assets/img/servicos.png" width="80px"/><br />
+          <label>Serviços</label>
+      </label>
+
+      <label class="col-md-3 col-sm-3">
+          <input [(ngModel)]="service.modalidade" value="ideia"   (change)='service.addModalidade("ideia")' type="radio" name="modalidade">
+          <br/><img src="assets/img/suaideia.png" width="80px"/><br />
+          <label>Sua ideia</label>
+      </label>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a class="btn btn-primary btn-lg btn-block disabled">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/{{service.modalidade}}-instrucao" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+</div>

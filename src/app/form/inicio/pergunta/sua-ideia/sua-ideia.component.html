@@ -1,0 +1,40 @@
+<div class="col-md-12">
+    <h2>Sua ideia</h2>
+    <p>
+        Ficaremos felizes em encontrar uma solução perfeita e colocar sua ideia em prática
+    </p>
+
+    
+
+
+
+  <!-- Sim e não-->
+
+        <div class="col-md-12 text-center" >
+
+            <p-editor  [style]="{'background-color':'#fff', 'height':'100px'}" [(ngModel)]="service.ideia" value="service.ideia"  (keyup)='service.addIdeia(service.ideia)'></p-editor>
+
+
+<!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+        </div>
+   
+
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/{{anterior}}" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/{{proximo}}" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

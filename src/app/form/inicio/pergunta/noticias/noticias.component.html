@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <h2>Notícias</h2>
+    <p>
+        
+        Utilize o canal para comunicar os pais a respeito de melhorias, mudanças no corpo docente, novidades no ensino e muito mais.
+    </p>
+    
+
+
+
+  <!-- Sim e não-->
+
+        <div class="col-md-12 text-center" >
+
+            <label class="radio">
+              <input [(ngModel)]="service.noticias" value="sim"  (click)='service.addNoticias("sim")' type="radio"name="noticias">
+              <div class="emot happy">
+                <div class="mouth smile "></div>
+              </div>
+            </label>
+          
+            <label class="radio">
+              <input [(ngModel)]="service.noticias" value="não" (click)='service.addNoticias("não")'   type="radio" name="nocicias">
+              <div class="emot happy ">
+                <div class="mouth sad"></div>
+              </div>
+            </label>
+
+
+<!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+        </div>
+   
+
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/mural-fotos" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/sua-ideia" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

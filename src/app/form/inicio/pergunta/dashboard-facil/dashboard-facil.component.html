@@ -1,0 +1,53 @@
+<div class="col-md-12">
+    <h2> Dashboard Fácil</h2>
+    <p>
+      
+        Aqui será a aba que você poderá gerenciar por completo o seu App, que mandará lembretes para seus clientes. promoções, avisos, organizar sua agenda e tudo de forma fácil e intuitiva.  
+    </p>
+    
+
+
+
+  <!-- Sim e não-->
+    <!-- Sim e não-->
+    <label class="radio ">
+            <input [(ngModel)]="service.dashBoard" value="sim"  (click)='service.addDashBoard("sim")' type="radio"name="dash">
+            <div class="emot happy ">
+              <div class="mouth smile "></div>
+            </div>
+        </label>
+        
+        <label class="radio">
+            <input [(ngModel)]="service.dashBoard" value="não" (click)='service.addDashBoard("não")'   type="radio" name="dash">
+            <div class="emot happy ">
+              <div class="mouth sad"></div>
+            </div>
+        </label>
+    
+    
+    <!--
+
+        <div class="col-md-12 text-center" >
+
+            <a [ngClass]="{'active': service.dicasSaude == 'sim'}"  (click)='service.addDicasSaude("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasSaude != 'sim' }" (click)='service.addDicasSaude("não")' class="btn btn-lg btn-outline-primary">Não</a>
+      
+        </div>
+
+    -->
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/servicos-cartao-fidelidade" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/sua-empresa" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

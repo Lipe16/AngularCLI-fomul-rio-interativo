@@ -1,0 +1,27 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.form{
+    
+    border:solid;
+    border-width: 0.4px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+    margin:20px;
+    padding-bottom: 10px;
+
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 1.2em;
+    font-family:  'Roboto', sans-serif;
+}
+
+.branco{
+    color: #000!important;
+    background-color: #fff!important;
+}

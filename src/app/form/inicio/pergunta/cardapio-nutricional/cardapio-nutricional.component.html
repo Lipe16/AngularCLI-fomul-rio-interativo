@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <h2>Cardápio Nutricional</h2>
+    <p>
+        
+        Envie facilmente o cardápio nutricional para grupos de alunos, classe ou individualmente. Além disso, conte com uma função de template para facilitar na digitação.  
+    </p>
+    
+
+
+
+  <!-- Sim e não-->
+    <label class="radio ">
+        <input [(ngModel)]="service.cardapioNutricional" value="sim"  (click)='service.addCardapioNutricional("sim")' type="radio"name="cardapio-nutricional">
+        <div class="emot happy ">
+          <div class="mouth smile "></div>
+        </div>
+    </label>
+    
+    <label class="radio">
+        <input [(ngModel)]="service.cardapioNutricional" value="não" (click)='service.addCardapioNutricional("não")'   type="radio" name="cardapio-nutricional">
+        <div class="emot happy ">
+          <div class="mouth sad"></div>
+        </div>
+    </label>
+
+
+<!--
+
+        <div class="col-md-12 text-center" >
+
+            <a [ngClass]="{'active': service.blog == 'sim'}"  (click)='service.addBlog("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.blog != 'sim' }" (click)='service.addBlog("não")' class="btn btn-lg btn-outline-primary">Não</a>
+      
+        </div>
+
+    -->
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/area-estudo" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/eventos" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

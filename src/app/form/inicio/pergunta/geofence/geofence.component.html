@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <h2>Geofence</h2>
+    <p>
+        
+O Geofence é uma ferramenta poderosíssima que faz com que sempre que seus clientes passarem por perto do seu restaurante receberão uma notificação mostrando prato do dia, novidades, cardápio, etc.
+    </p>
+    
+
+
+
+  <!-- Sim e não-->
+
+        <div class="col-md-12 text-center" >
+
+            <label class="radio">
+              <input [(ngModel)]="service.geofence" value="sim"  (click)='service.addGeofence("sim")' type="radio"name="geofence">
+              <div class="emot happy">
+                <div class="mouth smile "></div>
+              </div>
+            </label>
+          
+            <label class="radio">
+              <input [(ngModel)]="service.geofence" value="não" (click)='service.addGeofence("não")'   type="radio" name="geofence">
+              <div class="emot happy ">
+                <div class="mouth sad"></div>
+              </div>
+            </label>
+
+
+<!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+        </div>
+   
+
+    
+  
+<br/>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/restaurante-fotos" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/redes-sociais" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+
+
+</div>

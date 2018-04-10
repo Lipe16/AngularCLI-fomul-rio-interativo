@@ -1,0 +1,52 @@
+<div class="col-md-12">
+  <h2>Músicas de Artistas Católicos</h2>
+  <p>
+    Músicas de Artistas Católicos
+    Aqui você oferecerá mais uma opção de entretenimento: música dos melhores cantores católicos, gratuitamente para os seus usuários.
+  </p>
+  
+
+
+
+<!-- Sim e não-->
+
+      <div class="col-md-12 text-center" >
+
+          <label class="radio">
+            <input [(ngModel)]="service.musicasCatolicas" value="sim"  (click)='service.addMusicasCatolicas("sim")' type="radio"name="musicas">
+            <div class="emot happy">
+              <div class="mouth smile "></div>
+            </div>
+          </label>
+        
+          <label class="radio">
+            <input [(ngModel)]="service.musicasCatolicas" value="não" (click)='service.addMusicasCatolicas("não")'   type="radio" name="musicas">
+            <div class="emot happy ">
+              <div class="mouth sad"></div>
+            </div>
+          </label>
+
+
+<!--
+          <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+
+          <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+-->     
+      </div>
+ 
+
+  
+
+<br/>
+
+<div class="row">
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/igreja-instrucao02" class="btn btn-primary btn-lg btn-block">Anterior </a>
+  </div>
+  <div class="col-md-6 col-sm-6 espaco">
+      <a routerLink="/pergunta/noticias-catolicas" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+  </div>
+</div>
+
+
+</div>

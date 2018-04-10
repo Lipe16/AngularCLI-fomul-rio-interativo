@@ -1,0 +1,32 @@
+<div class="col-md-12">
+    <div class="row" id="linha1">
+
+      <!-- QUAL IGREJA VOCÊ É -->  
+        <label class="col-md-3 col-sm-3">
+            <input id="evangelica" [(ngModel)]="service.igrejaInstrucao"  value="evangélica" (change)='service.addIgrejaInstrucao("evangélica")' type="radio" name="igreja">
+            <br/><img src="assets/img/evangelica.png" width="80px"/><br />
+            <label for="evangelica">Evangelica</label>
+        </label>
+  
+        <label class="col-md-3 col-sm-3">
+            <input id="catolica" [(ngModel)]="service.igrejaInstrucao"  value="católica"  (change)='service.addIgrejaInstrucao("católica")' type="radio" name="igreja">
+            <br/><img src="assets/img/catolica.png" width="80px"/><br />
+            <label for="catolica">Católica</label>
+        </label>
+  
+        <label class="col-md-3 col-sm-3">
+            <input [(ngModel)]="service.igrejaInstrucao" id="outro" value="outro"  (change)='service.addIgrejaInstrucao("outro")' type="radio" name="igreja">
+            <br/><img src="assets/img/outro.png" width="80px"/><br />
+            <label for="outro">Outro</label>
+        </label>
+    </div>
+  
+    <div class="row botoes-abaixo">
+      <div class="col-md-6 col-sm-6 espaco">
+          <a routerLink="/pergunta/modalidades" class="btn btn-primary btn-lg btn-block">Anterior </a>
+      </div>
+      <div class="col-md-6 col-sm-6 espaco">
+          <a routerLink="/pergunta/igreja-instrucao02" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+      </div>
+    </div>
+  </div>

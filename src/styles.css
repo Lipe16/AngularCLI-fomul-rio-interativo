@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.espaco{
+    margin-top:15px;
+}
+
+.botoes-abaixo{
+    margin-top:100px;
+}
+
+
+/* CÓDIGO DO INDIANO PARA SMILE NOS INPUT RADIO */
+
+.reset {
+  display: inline-block;
+  text-decoration: none;
+	background: #5892fc;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	font-size: 1rem;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	position: relative;
+}
+
+/*  emot */
+
+.label-ctr {
+	margin-bottom: 50px;
+}
+
+label.radio {
+	height: 55px;
+	width: 55px;
+	display: inline-block;
+	margin: 0 10px;
+	background: transparent;
+	position: relative;
+	border-radius: 50%;
+	cursor: pointer
+}
+
+label.radio input {
+	visibility: hidden
+}
+
+label.radio input:checked + .emot {
+	-webkit-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	transform: scale(1.25);
+}
+
+label.radio input:checked + .emot,
+label.radio input:checked + .emot .mouth {
+	border-color: #5892fc;
+}
+
+label.radio input:checked + .emot:before,
+label.radio input:checked + .emot:after {
+	background: #5892fc;
+}
+
+label.radio .emot {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fafafa;
+	border-radius: 50%;
+	border: 2px solid #ddd;
+	-webkit-transition: .3s all ease;
+	transition: .3s all ease;
+}
+
+label.radio .emot:before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 5px;
+	height: 10px;
+	background: #ddd;
+}
+
+label.radio .emot:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 5px;
+	height: 10px;
+	background: #ddd;
+}
+
+label.radio .emot .mouth {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	left: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 3px solid #ddd;
+	background: transparent;
+	clip: rect(0, 35px, 10px, 0);
+}
+
+label.radio .emot .mouth.smile {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+label.radio .emot .mouth.sad {
+	-webkit-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	transform: translateY(50%);
+}
+

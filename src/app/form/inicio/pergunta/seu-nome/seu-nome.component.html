@@ -1,0 +1,42 @@
+<div class="col-md-12">
+   
+    <h2>Nome</h2>
+    <p>Qual é o seu nome?*</p>
+  
+  
+  <!-- Sim e não-->
+  
+        <div class="col-md-12 text-center" >
+            <p-messages [(value)]="msgs"></p-messages>
+  
+
+          
+          <span class="ui-float-label">
+              <input placeholder="Seu nome"  [(ngModel)]="service.nome" value="service.nome"  (keyup)='service.addNome(service.nome)' id="nome" pInputText/> 
+             
+          </span>
+  
+  
+  <!--
+            <a [ngClass]="{'active': service.dicasTreino == 'sim'}"  (click)='service.addDicasTreino("sim")' class="btn btn-lg btn-outline-primary">Sim</a>
+  
+            <a [ngClass]="{'active': service.dicasTreino != 'sim' }" (click)='service.addDicasTreino("não")' class="btn btn-lg btn-outline-primary">Não</a>
+  -->     
+        </div>
+   
+  
+    
+  
+  <br/>
+  
+  <div class="row">
+    <div class="col-md-6 col-sm-6 espaco">
+        <a routerLink="/pergunta/{{anterior}}" class="btn btn-primary btn-lg btn-block">Anterior </a>
+    </div>
+    <div class="col-md-6 col-sm-6 espaco">
+        <a (click)="liberar()" class="btn btn-primary btn-lg btn-block">Proximo  </a>
+    </div>
+  </div>
+  
+  
+  </div>
