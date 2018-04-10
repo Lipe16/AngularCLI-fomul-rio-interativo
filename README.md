@@ -1,6 +1,6 @@
 # Forms
 
-Projeto criado com AngularCLI, se trata de um formulário interativo muito bacana que usa emoticom de feliz para SIM e emoticon de triste para NÂO. Ao final além de o usuário poder escrever um pouco sobre a ideia dele, também poderá colocar nome, email e telefone, no final é apresentado uma folha de revisão com todas as respostas do usuário...
+Projeto criado com AngularCLI, se trata de um formulário interativo muito bacana que usa emoticom de feliz para SIM e emoticon de triste para NÃO. Ao final além de o usuário poder escrever um pouco sobre a ideia dele, também poderá colocar nome, email, telefone e é apresentado uma folha de revisão com todas as respostas do usuário...
 
 vídeo exemplo no youtube: [Link vídeo](https://www.youtube.com/watch?v=XTmhs3AEwkY&feature=youtu.be)
 
